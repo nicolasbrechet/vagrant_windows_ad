@@ -11,6 +11,22 @@
 
 Run `vagrant up` and then... wait
 
+After 5 minutes it will "fail":
+
+```
+==> domaincontroller: Notice: /Stage[main]/Windows_ad::Conf_forest/Exec[Config ADDS]/returns: executed successfully
+The SSH command responded with a non-zero exit status. Vagrant
+assumes that this means the command failed. The output for this command
+should be in the log above. Please read the output to determine what
+went wrong.
+```
+
+This is actually the machine rebooting... and setting up the AD role
+
+Once it's done, run `vagrant provision` to finish creating the users, groups, OUs...
+
+
+
 ## What it does
 
 - Vagrant will use the R10K plugin to download the Puppet modules needed to configure an AD
