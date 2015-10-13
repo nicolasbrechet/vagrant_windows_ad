@@ -1,0 +1,3 @@
+mod 'windows_ad', :git => 'https://github.com/insentia/windows_ad'
+mod 'powershell', :git => 'https://github.com/puppetlabs/puppetlabs-powershell'
+mod 'stdlib',     :git => 'https://github.com/puppetlabs/puppetlabs-stdlib'
